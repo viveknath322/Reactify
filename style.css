@@ -1,3 +1,118 @@
-#title{
-    color: blueviolet;
+
+:root{
+    --main-bg-color: #fe5200;
+    --main-text-color: #333;
+    --main-primary-color: #fff;
+    --main-green: #1BA672;
+    --main-red: #FF0000;
+    --font--family: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font--family);
+    /* outline: 1px dotted red; */
+}
+body {
+    font-family: var(--font--family)
+}
+
+header.header {
+    color: var(--main-text-color);
+    text-align: center;
+    background-color: var(--main-bg-color);
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    height: 70px;
+    padding: 10px 30px;
+    display: flex;
+    margin: 10px 10px 0;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: var(--main-primary-color);
+    font-family: var(--font--family)
+}
+.logo--container {
+    display: flex;
+}
+
+.logo--container img{
+    width: 160px;
+    height: auto;
+}
+.restaurant--container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.restaurant--container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 80px 0;
+}
+.res--card{
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.img--container img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.res--info{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.name--rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name--rating h2{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+.name--rating p{
+    background-color: var(--main-green);
+    color: var(--main-primary-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.res--cusine{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.res--card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.btn{
+    background-color: #fe5200;
+    color: var(--main-primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.btn:hover{
+    background-color: #ff6d00;
 }
